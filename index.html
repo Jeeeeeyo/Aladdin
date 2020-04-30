@@ -20,12 +20,28 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-light navbar-expand-sm aux-nav" id="topnavigation" style="color: #212529;background-color: #f4750d;">
+        <div class="container-fluid"><a class="navbar-brand" href="Dashboard.html"><img src="assets/img/icon.png" style="height: 50px;margin-bottom: 6px;padding-bottom: 0;margin-right: 9px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><i class="fa fa-navicon"></i></button>
+            <div
+                class="collapse navbar-collapse text-uppercase" id="navcol-1" style="padding-right: 30px;">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="Dashboard.html"><i class="fa fa-search"></i></a></li>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" href="#"><i class="fas fa-circle fa-2x"></i></a>
+                        <div class="dropdown-menu show dropdown-logout" role="menu"><a class="dropdown-item" role="presentation" href="MyEvent.html">my events</a><a class="dropdown-item" role="presentation" href="MyEventBlank.html">no events</a><a class="dropdown-item" role="presentation" href="#">ADD EVENT</a>
+                            <a
+                                class="dropdown-item" role="presentation" href="#">log out</a>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>
     <div class="border-secondary shadow">
         <div class="row" style="padding: 15px;">
             <div class="col">
                 <h4>My Events</h4>
             </div>
-            <div class="col text-right"><button class="btn btn-sm text-right" type="button" style="background-color: #f4750d;color: rgb(255,255,255);">Add New Event</button></div>
+            <div class="col text-right"><a class="btn btn-sm text-right" role="button" style="background-color: #f4750d;color: rgb(255,255,255);" href="MyEventForm.html">Add New Event</a></div>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
